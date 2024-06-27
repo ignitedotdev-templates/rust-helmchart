@@ -1,0 +1,16 @@
+appName: rust
+
+containerPort: 8080
+
+namespace: default
+tier: rust-backend
+
+serviceName: rust-service
+containerName: rust-container
+targetPort: 8080
+servicePort: 8010
+registrySecret: harbor-registry-secret
+
+image:
+  name: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/rust-docker
+  tag: 9550703302-9
